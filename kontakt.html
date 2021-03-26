@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Kontakt - ASG Construction</title>
+     <link rel="stylesheet" href="./styles/styleTopBar.css">
+     <link rel="stylesheet" href="./styles/styleContact.css">
+     <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+     <header class="Topbar">
+          <img src="./Imgs/Topbar/LOGO.png" alt="ASG Construction" id="logo">
+          <nav id="Menu">
+                    <a href="/Public/index.html">Oferta</a>
+                    <a href="/Public/realizacje.html" >Realizacje</a>
+                    <a href="/Public/kontakt.html" id="active">Kontakt</a>
+          </nav>
+
+          <button id="showMenu">
+               <span id="L"></span>
+               <span id="R"></span>
+          </button>
+     </header>
+     <main>
+          <header><h1>Skontaktuj się z nami</h1></header>
+
+          <section id="formContainer">
+               <header>Formularz kontaktowy</header>
+               <form>
+                    <input type="text" id="name" placeholder="Imie i nazwisko">
+                    <input type="email" id="email" placeholder="E-mail">
+                    <input type="tel" id="tel" placeholder="Nr. telefonu">
+                    <input type="text" id="topic" placeholder="Temat">
+                    <input type="textarea" id="message">
+                    <input type="submit" placeholder="Treść zapytania">
+               </form>
+          </section>
+
+          <section id="daneContainer">
+               <header>Dane kontaktowe</header>
+               <div class="contacts-container">
+                    <div class="contact">
+                         <div class="row">
+                              <img src="./Imgs/contactsSVG/Ellipse 11.svg" alt="Person:" />
+                              <p class="name">Paweł Piątkowski</p>
+                         </div>
+                         
+                         <div class="row">
+                              <img src="./Imgs/contactsSVG/Ellipse 12.svg" alt="tel:" />
+                              <a href="+48604275989">604 275 989</a>
+                         </div>
+     
+                         <div class="row">
+                              <img src="./Imgs/contactsSVG/Ellipse 10.svg" alt="tel:" />
+                              <p class="email">biuro@asgconstruction.pl</p>
+                         </div>
+                    </div>
+
+                    <div class="contact">
+                         <div class="row">
+                              <img src="./Imgs/contactsSVG/Ellipse 11.svg" alt="Person:" />
+                              <p class="name">Sebastian Piątkowski</p>
+                         </div>
+                         
+                         <div class="row">
+                              <img src="./Imgs/contactsSVG/Ellipse 12.svg" alt="tel:" />
+                              <a href="+48604275989">531 392 630</a>
+                         </div>
+     
+                         <div class="row">
+                              <img src="./Imgs/contactsSVG/Ellipse 10.svg" alt="tel:" />
+                              <p class="email">s.perfect.tig@gmail.com</p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </main>
+
+
+
+     <footer>
+          <p>&copy All rights reserved - ASG Construction</p>
+          <p>Made by Industa - Studio (2021r.)</p>
+     </footer>
+     
+     <script src="./scripts/topbar.js"></script>
+</body>
+</html>

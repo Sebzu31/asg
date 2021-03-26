@@ -1,0 +1,40 @@
+body {
+  background-color: whitesmoke;
+}
+
+section {
+  padding: 20px;
+}
+
+section h1 {
+  text-align: center;
+  margin: 40px;
+}
+
+.pictureContainer {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pictureContainer img {
+  margin: 2px;
+  max-width: 100%;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+#soon {
+  text-align: center;
+  padding-bottom: 30px;
+}
+/*# sourceMappingURL=styleGallery.css.map */

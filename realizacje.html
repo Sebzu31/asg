@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Realizacje ASG - Construction</title>
+
+     <link rel="stylesheet" href="./styles/main.css">
+     <link rel="stylesheet" href="./styles/styleTopBar.css">
+     <link rel="stylesheet" href="./styles/styleGallery.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     
+</head>
+
+
+<body>
+     <header class="Topbar">
+          <img src="./Imgs/Topbar/LOGO.png" alt="ASG Construction" id="logo">
+          <nav id="Menu">
+                    <a href="/Public/index.html">Oferta</a>
+                    <a href="/Public/realizacje.html" id="active">Realizacje</a>
+                    <a href="/Public/kontakt.html">Kontakt</a>
+          </nav>
+
+          <button id="showMenu">
+               <span id="L"></span>
+               <span id="R"></span>
+          </button>
+     </header>
+
+
+     <section>
+          <header><h1>Realizacje</h1></header>
+          <div class="pictureContainer">
+                 <!-- Zdjęcia ładowane java scriptem -->
+          </div>
+     </section>
+
+     <button id="goTop" class="btn-top">
+          <svg class="arrow up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5 0 50 80" xml:space="preserve">
+               <polyline fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" points="
+               0.375, 35.375 28.375, 0.375 58.67, 35.375 " />
+          </svg>
+     </button>
+
+
+     <footer>
+          <p>&copy All rights reserved - ASG Construction</p>
+          <p>Made by Industa - Studio (2021r.)</p>
+     </footer>
+
+     
+     <script src="./scripts/topbar.js"></script>
+     <script src="./scripts/galleryPage.js"></script>
+     <script src="./scripts/button.js"></script>
+     <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+     <script>AOS.init();</script>
+
+     
+</body>
+</html>

@@ -1,0 +1,140 @@
+span{
+     width:0px;
+     height:0px;
+}
+/* STEP 1 */
+#lines1::before{
+     content: '';
+     display:block;
+     position:absolute;
+     width:0%; left:0;
+     height:0%; top:0;
+     border-left:1px solid black;
+     border-bottom:1px solid black;
+     animation:drawHeight 1s 0s forwards;
+}
+
+#lines1::after{
+     content: '';
+     display:block;
+     position:absolute;
+     width:0%; left:0;
+     height:0%; top:calc(100%);
+     border-left:1px solid black;
+     border-bottom:1px solid black;
+     animation:drawWidth 1s 1s forwards;
+}
+
+
+/*  STEP 2 */
+#lines2{
+     display:none;
+}
+#lines2::before{
+     content: '';
+     display:block;
+     position:absolute;
+     width:0%; left:100%;
+     height:0%; top:0;
+     border-right:1px solid black;
+     border-bottom:1px solid black;
+     animation:drawHeight 1s 0s forwards;
+}
+
+#lines2::after{
+     content: '';
+     display:block;
+     position:absolute;
+     width:0%; left:100%;
+     height:0%; top:100%;
+     border-right:1px solid black;
+     border-bottom:1px solid black;
+     animation:drawWidthFromRight 1s 1s forwards;
+}
+
+/* Step 3 */
+#lines3{
+     display:none;
+}
+#lines3::before{
+     content: '';
+     display:block;
+     position:absolute;
+     width:0%; left:0;
+     height:0%; top:0;
+     border-left:1px solid black;
+     border-bottom:1px solid black;
+     animation:drawHeight 1s 0s forwards;
+}
+
+#lines3::after{
+     content: '';
+     display:block;
+     position:absolute;
+     width:0%; left:0;
+     height:0%; top:calc(100%);
+     border-left:1px solid black;
+     border-bottom:1px solid black;
+     animation:drawWidth 1s 1s forwards;
+}
+
+
+/* STEP 4 */
+#lines4{
+     display:none;
+}
+#lines4::before{
+     content: '';
+     display:block;
+     position:absolute;
+     width:0%; left:100%;
+     height:0%; top:0;
+     border-right:1px solid black;
+     border-bottom:1px solid black;
+     animation:drawHeight 1s 0.5s forwards;
+}
+
+
+@keyframes drawHeight{
+     from{
+          height:0%;
+     }
+     to{
+          height:100%;
+     }
+}
+
+
+@keyframes drawWidth{
+     from{
+          width:0%;
+     }
+     to{
+          width:100%;
+     }
+}
+
+@keyframes drawWidthFromRight{
+     from{
+          width:0%;
+     }
+     to{
+          left:0%;
+          width:100%;
+     }
+}
+
+
+
+
+
+
+@keyframes fadeIn{
+     from{
+          opacity:0;
+     }
+     
+     to{
+          opacity:1;
+     }
+}

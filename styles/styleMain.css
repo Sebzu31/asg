@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E5E5E5;
+  color: #222222;
+  font-size: 16px;
+  overflow-x: hidden;
+  font-family: 'Roboto Mono', monospace;
+  max-width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.Main-Page #offer-container {
+  background-color: #E5E5E5;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+
+.Main-Page #offer-container article {
+  margin: 0 auto;
+  min-height: 46.5vh;
+  min-width: 80%;
+  max-width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding: 0 80px;
+}
+
+.Main-Page #offer-container article .text-container {
+  width: 30%;
+}
+
+.Main-Page #offer-container article .text-container header {
+  font-size: 22px;
+  padding: 20px 0px;
+}
+
+.Main-Page #offer-container article .text-container ol {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+.Main-Page #offer-container article .text-container ol li::before {
+  content: '- ';
+}
+
+.Main-Page #offer-container article .text-container ol li {
+  padding: 2px 0px;
+}
+
+@media (max-width: 800px) {
+  .Main-Page #offer-container article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px;
+  }
+  .Main-Page #offer-container article img {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .Main-Page #offer-container article .text-container {
+    width: 100%;
+  }
+}
+
+.Main-Page #gallery-Container {
+  position: relative;
+  background-color: white;
+  z-index: 20;
+}
+
+.Main-Page #gallery-Container header {
+  font-size: 22px;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.Main-Page #gallery-Container .pics-container {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Main-Page #gallery-Container .pics-container img {
+  opacity: 0;
+  padding: 10px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.Main-Page #icons-container {
+  background-color: #E5E5E5;
+  padding-bottom: 30px;
+}
+
+.Main-Page #icons-container .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Main-Page #icons-container .icons figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.Main-Page #icons-container .icons figure img {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.Main-Page #icons-container .icons figure figcaption {
+  text-align: center;
+  padding: 0 5px;
+  font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+  .Main-Page #icons-container .icons figure {
+    -webkit-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6;
+  }
+}
+
+@media (max-width: 800px) {
+  .Main-Page #icons-container .icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.Main-Page .header3 {
+  font-size: 22px;
+  margin-left: 5vw;
+  padding: 40px 0px;
+}
+
+.Main-Page .Opinions-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.Main-Page .Opinions-Container .opinion {
+  max-width: 33.3%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 0 5vw;
+}
+
+.Main-Page .Opinions-Container .opinion .opinionTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+.Main-Page .Opinions-Container .opinion .text {
+  margin-top: 20px;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .header3 {
+    font-size: 22px;
+    margin-left: 5vw;
+    padding: 40px 0px;
+  }
+  .Opinions-Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 50px;
+  }
+  .Opinions-Container .opinion {
+    min-width: 100%;
+    padding: 0 5vw;
+  }
+  .Opinions-Container .opinion .opinionTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top: 1px solid black;
+    padding-top: 10px;
+  }
+  .Opinions-Container .opinion .text {
+    margin: 25px 0px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .pics {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=styleMain.css.map */
